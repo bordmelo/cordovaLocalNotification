@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "716240029462",
+    "firebase_url": "https://ispacliente.firebaseio.com",
+    "project_id": "ispacliente",
+    "storage_bucket": "ispacliente.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:716240029462:android:68cdb0cbd31d5ea9f1f237",
+        "android_client_info": {
+          "package_name": "ispacliente.com.br"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "716240029462-1v9cier6u292uktf0mpjk7udfq1sade5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcBRRKezp_2caRAd1yy_dgNqGXnuG6Nsw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "716240029462-1v9cier6u292uktf0mpjk7udfq1sade5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

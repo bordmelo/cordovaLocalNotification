@@ -7,19 +7,37 @@
     "files": {}
   },
   "installed_plugins": {
-    "cordova-plugin-whitelist": {
-      "PACKAGE_NAME": "io.cordova.hellocordova"
-    },
     "cordova-plugin-local-notification": {
-      "PACKAGE_NAME": "io.cordova.hellocordova"
+      "PACKAGE_NAME": "ispacliente.com.br"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "ispacliente.com.br"
+    },
+    "cordova-support-google-services": {
+      "PACKAGE_NAME": "ispacliente.com.br"
+    },
+    "cordova-plugin-firebase-messaging": {
+      "FIREBASE_ANALYTICS_VERSION": "17.2.+",
+      "FIREBASE_MESSAGING_VERSION": "20.0.+",
+      "ANDROIDX_CORE_VERSION": "1.0.+",
+      "PACKAGE_NAME": "ispacliente.com.br"
+    },
+    "cordova-plugin-androidx": {
+      "PACKAGE_NAME": "ispacliente.com.br"
+    },
+    "cordova-plugin-androidx-adapter": {
+      "PACKAGE_NAME": "ispacliente.com.br"
     }
   },
   "dependent_plugins": {
-    "cordova-plugin-device": {
-      "PACKAGE_NAME": "io.cordova.hellocordova"
-    },
     "cordova-plugin-badge": {
-      "PACKAGE_NAME": "io.cordova.hellocordova"
+      "PACKAGE_NAME": "ispacliente.com.br"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "ispacliente.com.br"
+    },
+    "cordova-support-android-plugin": {
+      "PACKAGE_NAME": "ispacliente.com.br"
     }
   }
 }

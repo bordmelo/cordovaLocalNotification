@@ -12,6 +12,18 @@
     },
     "cordova-plugin-local-notification": {
       "PACKAGE_NAME": "io.cordova.hellocordova"
+    },
+    "cordova-support-google-services": {
+      "PACKAGE_NAME": "ispacliente.com.br"
+    },
+    "cordova-plugin-firebase-messaging": {
+      "PACKAGE_NAME": "ispacliente.com.br"
+    },
+    "cordova-plugin-androidx": {
+      "PACKAGE_NAME": "ispacliente.com.br"
+    },
+    "cordova-plugin-androidx-adapter": {
+      "PACKAGE_NAME": "ispacliente.com.br"
     }
   },
   "dependent_plugins": {
