@@ -22,6 +22,8 @@
 		934116AB971648758163D404 /* UNNotificationRequest+APPLocalNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = D69F541D35094C4C961CB8EA /* UNNotificationRequest+APPLocalNotification.m */; };
 		E7AD353C9CD047BB82F10F1A /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90D5356BBFD0488FBEC68057 /* UserNotifications.framework */; };
 		D2122BD594C6473EB0E9D047 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2DEAF9A94AD4ED696916A03 /* CoreLocation.framework */; };
+		99854126B53C4A60809BA39C /* AppDelegate+FirebaseMessagingPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = A1C8E5934575443FA8B170F7 /* AppDelegate+FirebaseMessagingPlugin.m */; };
+		48ACD996E2604554B8AE815E /* FirebaseMessagingPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 70EBA77F47E14EEB93A82991 /* FirebaseMessagingPlugin.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +87,10 @@
 		97B4EF9BD56D4F91A7AF4BF5 /* UNNotificationRequest+APPLocalNotification.h */ = {isa = PBXFileReference; name = "UNNotificationRequest+APPLocalNotification.h"; path = "cordova-plugin-local-notification/UNNotificationRequest+APPLocalNotification.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 		90D5356BBFD0488FBEC68057 /* UserNotifications.framework */ = {isa = PBXFileReference; name = "UserNotifications.framework"; path = "System/Library/Frameworks/UserNotifications.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 		A2DEAF9A94AD4ED696916A03 /* CoreLocation.framework */ = {isa = PBXFileReference; name = "CoreLocation.framework"; path = "System/Library/Frameworks/CoreLocation.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		A1C8E5934575443FA8B170F7 /* AppDelegate+FirebaseMessagingPlugin.m */ = {isa = PBXFileReference; name = "AppDelegate+FirebaseMessagingPlugin.m"; path = "cordova-plugin-firebase-messaging/AppDelegate+FirebaseMessagingPlugin.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		70EBA77F47E14EEB93A82991 /* FirebaseMessagingPlugin.m */ = {isa = PBXFileReference; name = "FirebaseMessagingPlugin.m"; path = "cordova-plugin-firebase-messaging/FirebaseMessagingPlugin.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		92383C5BA9FA4C12A41A95FA /* AppDelegate+FirebaseMessagingPlugin.h */ = {isa = PBXFileReference; name = "AppDelegate+FirebaseMessagingPlugin.h"; path = "cordova-plugin-firebase-messaging/AppDelegate+FirebaseMessagingPlugin.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		6CEDF29986D74000A6B9971C /* FirebaseMessagingPlugin.h */ = {isa = PBXFileReference; name = "FirebaseMessagingPlugin.h"; path = "cordova-plugin-firebase-messaging/FirebaseMessagingPlugin.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,6 +213,10 @@
 				4F61242A6AA3412081BA6080 /* APPNotificationOptions.h */,
 				8053D88869DB48BDAB7EAA64 /* UNUserNotificationCenter+APPLocalNotification.h */,
 				97B4EF9BD56D4F91A7AF4BF5 /* UNNotificationRequest+APPLocalNotification.h */,
+				A1C8E5934575443FA8B170F7 /* AppDelegate+FirebaseMessagingPlugin.m */,
+				70EBA77F47E14EEB93A82991 /* FirebaseMessagingPlugin.m */,
+				92383C5BA9FA4C12A41A95FA /* AppDelegate+FirebaseMessagingPlugin.h */,
+				6CEDF29986D74000A6B9971C /* FirebaseMessagingPlugin.h */,
 			);
 			name = Plugins;
 			path = "HelloCordova/Plugins";
@@ -338,6 +348,8 @@
 				9E155594B61B42068E63A84D /* APPNotificationOptions.m in Sources */,
 				B7E6B234747D4A54A7A87259 /* UNUserNotificationCenter+APPLocalNotification.m in Sources */,
 				934116AB971648758163D404 /* UNNotificationRequest+APPLocalNotification.m in Sources */,
+				99854126B53C4A60809BA39C /* AppDelegate+FirebaseMessagingPlugin.m in Sources */,
+				48ACD996E2604554B8AE815E /* FirebaseMessagingPlugin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,9 +383,22 @@
 				INFOPLIST_FILE = "HelloCordova/HelloCordova-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.cordova.hellocordova;
+				PRODUCT_BUNDLE_IDENTIFIER = ispacliente.com.br;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"HelloCordova/Plugins/cordova-plugin-firebase\"",
+					"\"HelloCordova/Plugins/cordova-plugin-firebase\"",
+					"\"HelloCordova/Plugins/cordova-plugin-firebase\"",
+					"\"HelloCordova/Plugins/cordova-plugin-firebase\"",
+					"\"HelloCordova/Plugins/cordova-plugin-firebase\"",
+					"\"HelloCordova/Plugins/cordova-plugin-firebase\"",
+					"\"HelloCordova/Plugins/cordova-plugin-firebase\"",
+					"\"HelloCordova/Plugins/cordova-plugin-firebase\"",
+					"\"HelloCordova/Plugins/cordova-plugin-firebase\"",
+					"\"HelloCordova/Plugins/cordova-plugin-firebase\"",
+				);
 			};
 			name = Debug;
 		};
@@ -394,9 +419,22 @@
 				INFOPLIST_FILE = "HelloCordova/HelloCordova-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.cordova.hellocordova;
+				PRODUCT_BUNDLE_IDENTIFIER = ispacliente.com.br;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"HelloCordova/Plugins/cordova-plugin-firebase\"",
+					"\"HelloCordova/Plugins/cordova-plugin-firebase\"",
+					"\"HelloCordova/Plugins/cordova-plugin-firebase\"",
+					"\"HelloCordova/Plugins/cordova-plugin-firebase\"",
+					"\"HelloCordova/Plugins/cordova-plugin-firebase\"",
+					"\"HelloCordova/Plugins/cordova-plugin-firebase\"",
+					"\"HelloCordova/Plugins/cordova-plugin-firebase\"",
+					"\"HelloCordova/Plugins/cordova-plugin-firebase\"",
+					"\"HelloCordova/Plugins/cordova-plugin-firebase\"",
+					"\"HelloCordova/Plugins/cordova-plugin-firebase\"",
+				);
 			};
 			name = Release;
 		};
@@ -438,7 +476,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = io.cordova.hellocordova;
+				PRODUCT_BUNDLE_IDENTIFIER = ispacliente.com.br;
 			};
 			name = Debug;
 		};
@@ -478,7 +516,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = io.cordova.hellocordova;
+				PRODUCT_BUNDLE_IDENTIFIER = ispacliente.com.br;
 			};
 			name = Release;
 		};

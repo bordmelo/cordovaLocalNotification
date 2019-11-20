@@ -27,11 +27,28 @@ var app = {
     // Bind any cordova events here. Common events are:
     // 'pause', 'resume', etc.
     onDeviceReady: function() {
+      cordova.plugins.firebase.messaging.getToken().then(function(token) {
+        console.log("Got device token: ", token);
+    });
+
+    cordova.plugins.firebase.messaging.onMessage(function(payload) {
+      console.log("New foreground FCM message: ", payload);
+      cordova.plugins.notification.local.schedule({
+        title: 'Notificação teste',
+        text: 'Apenas um teste...',
+        foreground: true
+    });
+  });
+
+  cordova.plugins.firebase.messaging.onBackgroundMessage(function(payload) {
+    console.log("New background FCM message: ", payload);
+})
+
         document.getElementById("notify").addEventListener("click",
           function () {
             cordova.plugins.notification.local.schedule({
-                title: 'My first notification',
-                text: 'Thats pretty easy...',
+                title: 'Notificação teste',
+                text: 'Apenas um teste...',
                 foreground: true
             });
           }
